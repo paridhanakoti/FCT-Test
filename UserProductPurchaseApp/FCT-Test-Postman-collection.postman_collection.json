@@ -1,0 +1,380 @@
+{
+	"info": {
+		"_postman_id": "29ce7d80-de19-4217-931b-ca1c966981ec",
+		"name": "FCT-Test-Postman-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FCT-AuthToken",
+			"item": [
+				{
+					"name": "Product API, Purchase API - requires authorization token (please copy paste token from authentication/login result)",
+					"item": [
+						{
+							"name": "https://localhost:44331/api/Products?$orderBy=name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44331/api/Products?$orderBy=name",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44331",
+									"path": [
+										"api",
+										"Products"
+									],
+									"query": [
+										{
+											"key": "$orderBy",
+											"value": "name"
+										}
+									]
+								},
+								"description": "Odata query to order by a field"
+							},
+							"response": []
+						},
+						{
+							"name": "https://localhost:44331/api/Products",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUZXN0VXNlciIsImp0aSI6IjhlOWFjMzFlLTBhMDUtNGYyMS05NTZlLWY2NzZjM2JmYzY3MCIsImV4cCI6MTU4MTMxODk0MiwiaXNzIjoiaHR0cDovL3h5ei5jb20iLCJhdWQiOiJodHRwOi8veHl6LmNvbSJ9.4LsY9_atB2Htsm9HwiMI2qd7UWYE4uKrXBn0y5dmMrs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44331/api/Products",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44331",
+									"path": [
+										"api",
+										"Products"
+									]
+								},
+								"description": "Get all products"
+							},
+							"response": []
+						},
+						{
+							"name": "https://localhost:44331/api/Products/1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44331/api/Products/2",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44331",
+									"path": [
+										"api",
+										"Products",
+										"2"
+									]
+								},
+								"description": "Get by index"
+							},
+							"response": []
+						},
+						{
+							"name": "https://localhost:44331/api/Products",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUZXN0VXNlciIsImp0aSI6ImE1MTM3MjM5LWVjNGQtNGVhYy04NWY2LTRiMGUyOTA5OWY2NCIsImV4cCI6MTU4MTMyMDU1OSwiaXNzIjoiaHR0cDovL3h5ei5jb20iLCJhdWQiOiJodHRwOi8veHl6LmNvbSJ9.KFBdC02D42-ix16UUAUuq2-eY432q9qimdIQafivbcE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\" : \"home protection\",\n\t\"description\" : \"sample desc\",\n\t\"price\" : \"53.55\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44331/api/Products",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44331",
+									"path": [
+										"api",
+										"Products"
+									]
+								},
+								"description": "Post a product"
+							},
+							"response": []
+						},
+						{
+							"name": "https://localhost:44331/api/Products/1",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\" : \"home protection\",\n\t\"description\" : \"sample desc\",\n\t\"price\" : \"53.55\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44331/api/Products/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44331",
+									"path": [
+										"api",
+										"Products",
+										"1"
+									]
+								},
+								"description": "update product"
+							},
+							"response": []
+						},
+						{
+							"name": "https://localhost:44331/api/Products/1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44331/api/Products/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44331",
+									"path": [
+										"api",
+										"Products",
+										"1"
+									]
+								},
+								"description": "delete product"
+							},
+							"response": []
+						},
+						{
+							"name": "https://localhost:44331/api/Purchases",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUZXN0VXNlcjEiLCJqdGkiOiIyYTA2NjU4NC1jYWJkLTQyMDAtYmZkNy0zZDViZmQxMTcyOWIiLCJleHAiOjE1ODEzMjU0NjAsImlzcyI6Imh0dHA6Ly94eXouY29tIiwiYXVkIjoiaHR0cDovL3h5ei5jb20ifQ.KNjfp-okS1dAQA_XHlNurJIfdsWDmA6tolnW_8K-rug",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44331/api/Purchases",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44331",
+									"path": [
+										"api",
+										"Purchases"
+									]
+								},
+								"description": "Get Purchases of a logged in user"
+							},
+							"response": []
+						},
+						{
+							"name": "https://localhost:44331/api/Purchases",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUZXN0VXNlcjEiLCJqdGkiOiIyYTA2NjU4NC1jYWJkLTQyMDAtYmZkNy0zZDViZmQxMTcyOWIiLCJleHAiOjE1ODEzMjU0NjAsImlzcyI6Imh0dHA6Ly94eXouY29tIiwiYXVkIjoiaHR0cDovL3h5ei5jb20ifQ.KNjfp-okS1dAQA_XHlNurJIfdsWDmA6tolnW_8K-rug",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"userId\":\"050aada3-d241-42c3-a94c-834af6c5be6e\",\n\t\"productId\":\"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44331/api/Purchases",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44331",
+									"path": [
+										"api",
+										"Purchases"
+									]
+								},
+								"description": "Add a purchase for the logged in user"
+							},
+							"response": []
+						},
+						{
+							"name": "https://localhost:44331/api/Purchases/1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44331/api/Purchases/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44331",
+									"path": [
+										"api",
+										"Purchases",
+										"1"
+									]
+								},
+								"description": "cancel a purchase for the logged in user"
+							},
+							"response": []
+						}
+					],
+					"description": "Once the user is authenticated and has a valid JWT token, this token will be needed to access Product Controller and Purchase Controller since they are protected endpoints that require authorization",
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUZXN0VXNlcjEiLCJqdGkiOiJlYWJjZTYxOC0wZTcxLTQ0ODYtOTc2YS0yNjk0ZWE5MTYzYzgiLCJleHAiOjE1ODE3NTc2ODYsImlzcyI6Imh0dHA6Ly94eXouY29tIiwiYXVkIjoiaHR0cDovL3h5ei5jb20ifQ.C-5WDGL5FqCHMCRhrUpdaCmB2OVNhdaOtu_5WzlR8c0",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d3d77eea-3787-491b-93d2-5831e9aec264",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "4a8b93ad-ce65-4fc4-b0d6-872369a7c2d7",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "https://localhost:44331/api/auth/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Username\" : \"TestUser1\",\n\t\"Password\" : \"P@ssword11\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44331/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44331",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
