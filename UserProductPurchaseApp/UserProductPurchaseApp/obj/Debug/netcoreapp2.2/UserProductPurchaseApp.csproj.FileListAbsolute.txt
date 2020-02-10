@@ -1,0 +1,14 @@
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\bin\Debug\netcoreapp2.2\UserProductPurchaseApp.deps.json
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\bin\Debug\netcoreapp2.2\UserProductPurchaseApp.runtimeconfig.json
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\bin\Debug\netcoreapp2.2\UserProductPurchaseApp.runtimeconfig.dev.json
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\bin\Debug\netcoreapp2.2\UserProductPurchaseApp.dll
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\bin\Debug\netcoreapp2.2\UserProductPurchaseApp.pdb
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\obj\Debug\netcoreapp2.2\UserProductPurchaseApp.csprojAssemblyReference.cache
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\obj\Debug\netcoreapp2.2\UserProductPurchaseApp.csproj.CoreCompileInputs.cache
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\obj\Debug\netcoreapp2.2\UserProductPurchaseApp.RazorAssemblyInfo.cache
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\obj\Debug\netcoreapp2.2\UserProductPurchaseApp.RazorAssemblyInfo.cs
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\obj\Debug\netcoreapp2.2\UserProductPurchaseApp.AssemblyInfoInputs.cache
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\obj\Debug\netcoreapp2.2\UserProductPurchaseApp.AssemblyInfo.cs
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\obj\Debug\netcoreapp2.2\UserProductPurchaseApp.RazorTargetAssemblyInfo.cache
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\obj\Debug\netcoreapp2.2\UserProductPurchaseApp.dll
+C:\Users\admin_pdhanakoti\Documents\FTC-Projects\UserProductPurchaseApp\UserProductPurchaseApp\obj\Debug\netcoreapp2.2\UserProductPurchaseApp.pdb
